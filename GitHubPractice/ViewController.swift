@@ -19,40 +19,40 @@ class ViewController: UIViewController{
         
     }
     @IBAction func whenAddButtonPressed(_sender:UIButton) {
-        var data1 = Int(firstNumberTextField!)
-        var data2 = Int(secondNumberTextField!)
+        var data1 = Int(firstNumberTextField.text!)
+        var data2 = Int(secondNumberTextField.text!)
         
-        let finalData = data1 + data2
+        let finalData = data1! + data2!
         
         operationsLabel.text = "+"
         answerLabel.text = "\(finalData)"
         }
     
     @IBAction func whenSubtractButtonPressed(_ sender: UIButton) {
-        var data1 = Int(firstNumberTextField!)
-        var data2 = Int(secondNumberTextField!)
+        var data1 = Int(firstNumberTextField.text!)
+        var data2 = Int(secondNumberTextField.text!)
         
-        let finalData = data1 - data2
+        let finalData = data1! - data2!
         
         operationsLabel.text = "-"
         answerLabel.text = "\(finalData)"
        }
 
     @IBAction func whenMultiplyButtonPresse(_sender:UIButton) {
-        let multiplydata1 = Int(firstNumberTextField!)
-        let multiplydata2 = Int(secondNumberTextField!)
+        var data1 = Int(firstNumberTextField.text!)
+        var data2 = Int(secondNumberTextField.text!)
         
-        let finalMultiplyData = multiplydata1 * multiplydata2
+        let finalData = data1! * data2!
         
         operationsLabel.text = "*"
-        answerLabel.text = "\(finalMultiplyData)"
+        answerLabel.text = "\(finalData)"
     }
     
     @IBAction func whenDivideButtonPressed(_ sender:UIButton) {
-        var data1 = Int(firstNumberTextField!)
-        var data2 = Int(secondNumberTextField!)
+        var data1 = Int(firstNumberTextField.text!)
+        var data2 = Int(secondNumberTextField.text!)
         
-        let finalData = data1 / data2
+        let finalData = data1! / data2!
         
         operationsLabel.text = "/"
         answerLabel.text = "\(finalData)"
