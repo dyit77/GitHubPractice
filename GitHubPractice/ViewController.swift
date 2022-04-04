@@ -16,19 +16,26 @@ class ViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
     @IBAction func whenAddButtonPressed(_sender:UIButton) {
-        var data1 = firstNumberTextField!
-        var data2 = secondNumberTextField!
+           let data1 = firstNumberTextField!
+           let data2 = secondNumberTextField!
+           
+           let finalData = "\(data1)" + "\(data2)"
+           
+           operationsLabel.text = "+"
+           
+           answerLabel.text = "\(finalData)"
+       }
+
+    @IBAction func whenMultiplyButtonPresse(_sender:UIButton) {
+        let multiplydata1 = Int(firstNumberTextField!)
+        let multiplydata2 = Int(secondNumberTextField!)
         
-        let finalData = Int(data1) + Int(data2)
+        let finalMultiplyData = multiplydata1 * multiplydata2
         
-        operationsLabel.text = "+"
-        
-        answerLabel.text = "\(finalData)"
-        
-        
+        answerLabel.text = "\(finalMultiplyData)"
         
     }
 
