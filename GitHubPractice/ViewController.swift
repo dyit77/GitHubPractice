@@ -36,7 +36,6 @@ class ViewController: UIViewController{
         
         operationsLabel.text = "-"
         answerLabel.text = "\(finalData)"
-         
        }
 
     @IBAction func whenMultiplyButtonPresse(_sender:UIButton) {
@@ -45,8 +44,8 @@ class ViewController: UIViewController{
         
         let finalMultiplyData = multiplydata1 * multiplydata2
         
+        operationsLabel.text = "*"
         answerLabel.text = "\(finalMultiplyData)"
-        
     }
     
     @IBAction func whenDivideButtonPressed(_ sender:UIButton) {
